@@ -1,0 +1,9 @@
+digraph Transaction_Tree_SPutE {
+	splines=true
+	rankdir=LR
+	nodesep=0.4 ranksep=2
+	ratio=0.5
+	fontsize=15 label=Transaction_Tree_SPutE
+	" [S] 0" -> "TRANS_, ASSIGN_, SEND_, SETFUNC_, NCOND_, ENDIF_, ENDPROC_ [S] 0" [fontcolor=black fontsize=10]
+	" [S] 0" -> "TRANS_, ASSIGN_, SEND_, SETFUNC_, COND_, ASSIGN_, BREAK_ [I] 0" [fontcolor=black fontsize=10]
+}

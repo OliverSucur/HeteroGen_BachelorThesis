@@ -1,0 +1,9 @@
+digraph Transaction_Tree_SevictState {
+	splines=true
+	rankdir=LR
+	nodesep=0.4 ranksep=2
+	ratio=0.5
+	fontsize=15 label=Transaction_Tree_SevictState
+	0 -> "TRANS_, ASSIGN_, SEND_0" [fontcolor=black fontsize=10]
+	"TRANS_, ASSIGN_, SEND_0" -> "GUARD__Put_Ack, ASSIGN_, BREAK_ [I] 0" [fontcolor=black fontsize=10]
+}

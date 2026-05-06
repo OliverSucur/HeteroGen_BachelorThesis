@@ -1,0 +1,34 @@
+digraph "Token_Tree_S, store, State" {
+	splines=true
+	rankdir=LR
+	nodesep=0.4 ranksep=2
+	ratio=0.5
+	fontsize=15 label="Token_Tree_S, store, State"
+	TRANS_0 -> ASSIGN_0 [fontcolor=black fontsize=10]
+	ASSIGN_0 -> SEND_0 [fontcolor=black fontsize=10]
+	SEND_0 -> ASSIGN_1 [fontcolor=black fontsize=10]
+	ASSIGN_1 -> GUARD_0 [fontcolor=black fontsize=10]
+	ASSIGN_1 -> GUARD_1 [fontcolor=black fontsize=10]
+	ASSIGN_1 -> GUARD_2 [fontcolor=black fontsize=10]
+	GUARD_0 -> ACCESS_0 [fontcolor=black fontsize=10]
+	ACCESS_0 -> ASSIGN_2 [fontcolor=black fontsize=10]
+	ASSIGN_2 -> BREAK_0 [fontcolor=black fontsize=10]
+	GUARD_1 -> ASSIGN_3 [fontcolor=black fontsize=10]
+	ASSIGN_3 -> COND_0 [fontcolor=black fontsize=10]
+	ASSIGN_3 -> NCOND_0 [fontcolor=black fontsize=10]
+	COND_0 -> ACCESS_1 [fontcolor=black fontsize=10]
+	ACCESS_1 -> ASSIGN_4 [fontcolor=black fontsize=10]
+	ASSIGN_4 -> BREAK_1 [fontcolor=black fontsize=10]
+	NCOND_0 -> ENDIF_0 [fontcolor=black fontsize=10]
+	ENDIF_0 -> GUARD_3 [fontcolor=black fontsize=10]
+	GUARD_3 -> ASSIGN_5 [fontcolor=black fontsize=10]
+	ASSIGN_5 -> COND_1 [fontcolor=black fontsize=10]
+	ASSIGN_5 -> NCOND_1 [fontcolor=black fontsize=10]
+	COND_1 -> ACCESS_2 [fontcolor=black fontsize=10]
+	ACCESS_2 -> ASSIGN_6 [fontcolor=black fontsize=10]
+	ASSIGN_6 -> BREAK_2 [fontcolor=black fontsize=10]
+	NCOND_1 -> ENDIF_1 [fontcolor=black fontsize=10]
+	ENDIF_1 -> ENDWHEN_0 [fontcolor=black fontsize=10]
+	GUARD_2 -> ASSIGN_7 [fontcolor=black fontsize=10]
+	ASSIGN_7 -> ENDWHEN_1 [fontcolor=black fontsize=10]
+}
